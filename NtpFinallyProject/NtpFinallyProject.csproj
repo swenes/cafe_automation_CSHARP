@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B886010E-1B77-4812-BDC2-08A25FB54F22}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NtpFinallyProject</RootNamespace>
+    <AssemblyName>NtpFinallyProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Profiterol Atölyesi</ProductName>
+    <PublisherName>EnsYazilim</PublisherName>
+    <SuiteName>EnsYazilim</SuiteName>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D130335D0568D900A025B62F4EE5A0778A2AD9B4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NtpFinallyProject_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Baglanti.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="frmAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnasayfa.Designer.cs">
+      <DependentUpon>frmAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmailKontrolGRCK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailKontrolGRCK.Designer.cs">
+      <DependentUpon>frmEmailKontrolGRCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGelAl1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGelAl1.Designer.cs">
+      <DependentUpon>frmGelAl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGelAl2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGelAl2.Designer.cs">
+      <DependentUpon>frmGelAl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGelAl3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGelAl3.Designer.cs">
+      <DependentUpon>frmGelAl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGelAl4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGelAl4.Designer.cs">
+      <DependentUpon>frmGelAl4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGirisYapGRCK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGirisYapGRCK.Designer.cs">
+      <DependentUpon>frmGirisYapGRCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGunSonu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGunSonu.Designer.cs">
+      <DependentUpon>frmGunSonu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGunSonuVerileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGunSonuVerileri.Designer.cs">
+      <DependentUpon>frmGunSonuVerileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKayitOlGRCK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKayitOlGRCK.Designer.cs">
+      <DependentUpon>frmKayitOlGRCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasa1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasa1.Designer.cs">
+      <DependentUpon>frmMasa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasa2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasa2.Designer.cs">
+      <DependentUpon>frmMasa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasa3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasa3.Designer.cs">
+      <DependentUpon>frmMasa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasa4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasa4.Designer.cs">
+      <DependentUpon>frmMasa4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasa5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasa5.Designer.cs">
+      <DependentUpon>frmMasa5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasa6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasa6.Designer.cs">
+      <DependentUpon>frmMasa6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasa7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasa7.Designer.cs">
+      <DependentUpon>frmMasa7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasa8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasa8.Designer.cs">
+      <DependentUpon>frmMasa8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSifreYenilemeGRCK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSifreYenilemeGRCK.Designer.cs">
+      <DependentUpon>frmSifreYenilemeGRCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunler.Designer.cs">
+      <DependentUpon>frmUrunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAnasayfa.resx">
+      <DependentUpon>frmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailKontrolGRCK.resx">
+      <DependentUpon>frmEmailKontrolGRCK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGelAl1.resx">
+      <DependentUpon>frmGelAl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGelAl2.resx">
+      <DependentUpon>frmGelAl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGelAl3.resx">
+      <DependentUpon>frmGelAl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGelAl4.resx">
+      <DependentUpon>frmGelAl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGirisYapGRCK.resx">
+      <DependentUpon>frmGirisYapGRCK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGunSonu.resx">
+      <DependentUpon>frmGunSonu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGunSonuVerileri.resx">
+      <DependentUpon>frmGunSonuVerileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKayitOlGRCK.resx">
+      <DependentUpon>frmKayitOlGRCK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasa1.resx">
+      <DependentUpon>frmMasa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasa2.resx">
+      <DependentUpon>frmMasa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasa3.resx">
+      <DependentUpon>frmMasa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasa4.resx">
+      <DependentUpon>frmMasa4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasa5.resx">
+      <DependentUpon>frmMasa5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasa6.resx">
+      <DependentUpon>frmMasa6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasa7.resx">
+      <DependentUpon>frmMasa7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasa8.resx">
+      <DependentUpon>frmMasa8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSifreYenilemeGRCK.resx">
+      <DependentUpon>frmSifreYenilemeGRCK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunler.resx">
+      <DependentUpon>frmUrunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="NtpFinallyProject_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon %281%29.ico" />
+    <Content Include="ProfiterolAtolyesi.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProfiterolAtolyesi.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
